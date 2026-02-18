@@ -138,42 +138,42 @@ export default function WritingPage() {
       </section>
 
       {/* ─── NEWSLETTER ── Dark section ──────────────────── */}
-      <section className="py-28 md:py-36">
+      <section className="py-20 md:py-36">
         <div className="max-w-7xl mx-auto px-6">
           <ScrollReveal>
-            <div className="bg-surface-elevated rounded-[24px] p-8 md:p-14 lg:p-16 relative overflow-hidden">
+            <div className="bg-surface-elevated rounded-[20px] md:rounded-[24px] p-6 sm:p-8 md:p-14 lg:p-16 relative overflow-hidden">
               <div className="absolute -top-24 -right-24 w-[320px] h-[320px] rounded-full bg-violet/5 blur-[80px] pointer-events-none" />
 
-              <div className="relative grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-10 md:gap-16 items-center">
-                <div className="space-y-4">
+              <div className="relative grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-8 md:gap-16 items-center">
+                <div className="space-y-3 md:space-y-4 text-center md:text-left">
                   <p className="font-mono text-[11px] text-electric tracking-[0.2em] uppercase">
                     Newsletter
                   </p>
-                  <h2 className="font-display font-bold text-3xl md:text-4xl text-fg tracking-tight leading-tight">
+                  <h2 className="font-display font-bold text-2xl sm:text-3xl md:text-4xl text-fg tracking-tight leading-tight">
                     Get notified when I publish
                   </h2>
-                  <p className="text-fg-muted leading-relaxed max-w-md">
+                  <p className="text-fg-muted text-sm md:text-base leading-relaxed max-w-md mx-auto md:mx-0">
                     Practitioner-focused writing on GIS development, drones,
                     and spatial AI. No spam. No fluff.
                   </p>
                 </div>
 
-                <div className="space-y-5">
-                  <div className="flex gap-2">
+                <div className="space-y-4 md:space-y-5">
+                  <div className="flex flex-col sm:flex-row gap-3 sm:gap-2">
                     <input
                       type="email"
                       placeholder="your@email.com"
                       disabled
-                      className="flex-1 bg-surface border border-border rounded-full px-5 py-3.5 text-sm text-fg-subtle opacity-50 cursor-not-allowed"
+                      className="w-full sm:flex-1 bg-surface border border-border rounded-xl sm:rounded-full px-5 py-3.5 text-sm text-fg-subtle opacity-50 cursor-not-allowed"
                     />
                     <button
                       disabled
-                      className="bg-violet/20 text-violet/60 font-display font-semibold text-sm px-6 py-3.5 rounded-full cursor-not-allowed shrink-0"
+                      className="w-full sm:w-auto bg-violet/20 text-violet/60 font-display font-semibold text-sm px-6 py-3.5 rounded-xl sm:rounded-full cursor-not-allowed"
                     >
                       Subscribe
                     </button>
                   </div>
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center justify-center sm:justify-start gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-amber animate-pulse" />
                     <p className="font-mono text-[11px] text-fg-subtle">
                       Newsletter launching soon
@@ -183,7 +183,7 @@ export default function WritingPage() {
                     href="https://linkedin.com/in/scotchajison"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-sm text-fg-muted hover:text-fg transition-colors"
+                    className="flex items-center justify-center sm:justify-start gap-2 text-sm text-fg-muted hover:text-fg transition-colors py-1"
                   >
                     Follow on LinkedIn for updates{" "}
                     <span className="text-xs">↗</span>
