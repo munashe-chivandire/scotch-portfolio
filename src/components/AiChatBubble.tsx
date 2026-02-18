@@ -111,7 +111,8 @@ export default function AiChatBubble() {
               className="fixed z-50
                 inset-0 md:inset-auto
                 md:bottom-24 md:right-6
-                md:w-[380px] md:h-[540px]
+                md:w-[420px] md:h-[600px]
+                lg:w-[480px] lg:h-[680px]
                 md:rounded-[24px] md:border md:border-border
                 bg-surface md:shadow-[0_24px_80px_rgba(0,0,0,0.5)]
                 flex flex-col overflow-hidden"
@@ -121,10 +122,10 @@ export default function AiChatBubble() {
                 {/* Gradient accent line */}
                 <div className="h-[2px] gradient-bg" />
 
-                <div className="flex items-center justify-between px-5 py-4">
+                <div className="flex items-center justify-between px-5 py-4 lg:px-6 lg:py-5">
                   <div className="flex items-center gap-3">
                     {/* Avatar */}
-                    <div className="relative w-8 h-8 rounded-full gradient-bg flex items-center justify-center">
+                    <div className="relative w-8 h-8 lg:w-10 lg:h-10 rounded-full gradient-bg flex items-center justify-center">
                       <svg
                         width="16"
                         height="16"
@@ -145,7 +146,7 @@ export default function AiChatBubble() {
                       </span>
                     </div>
                     <div>
-                      <h3 className="font-display font-semibold text-sm text-fg leading-none">
+                      <h3 className="font-display font-semibold text-sm lg:text-base text-fg leading-none">
                         SA Assistant
                       </h3>
                       <p className="font-mono text-[10px] text-success tracking-[0.1em] uppercase mt-1">
@@ -179,14 +180,14 @@ export default function AiChatBubble() {
               </div>
 
               {/* Messages area */}
-              <div className="flex-1 overflow-y-auto px-5 py-4 space-y-4 scrollbar-thin">
+              <div className="flex-1 overflow-y-auto px-5 py-4 lg:px-6 lg:py-5 space-y-4 scrollbar-thin">
                 {messages.map((msg) => (
                   <div
                     key={msg.id}
                     className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
                   >
                     <div
-                      className={`max-w-[85%] px-4 py-3 text-sm leading-relaxed font-sans ${
+                      className={`max-w-[85%] px-4 py-3 lg:px-5 lg:py-3.5 text-sm lg:text-[15px] leading-relaxed font-sans ${
                         msg.role === "user"
                           ? "bg-violet/20 text-fg rounded-[16px] rounded-br-[4px] border border-violet/20"
                           : "bg-surface-elevated text-fg-muted rounded-[16px] rounded-bl-[4px] border border-border"
@@ -229,7 +230,7 @@ export default function AiChatBubble() {
               </div>
 
               {/* Input area */}
-              <div className="shrink-0 border-t border-border px-4 py-3">
+              <div className="shrink-0 border-t border-border px-4 py-3 lg:px-5 lg:py-4">
                 <div className="flex items-center gap-2">
                   <input
                     ref={inputRef}
@@ -238,14 +239,14 @@ export default function AiChatBubble() {
                     onChange={(e) => setInput(e.target.value)}
                     onKeyDown={handleKeyDown}
                     placeholder="Ask me anything..."
-                    className="flex-1 bg-surface-elevated border border-border rounded-full px-4 py-2.5
-                      text-sm text-fg placeholder:text-fg-subtle/50 font-sans
+                    className="flex-1 bg-surface-elevated border border-border rounded-full px-4 py-2.5 lg:px-5 lg:py-3
+                      text-sm lg:text-[15px] text-fg placeholder:text-fg-subtle/50 font-sans
                       focus:outline-none focus:border-violet/50 transition-colors duration-200"
                   />
                   <button
                     onClick={() => handleSend()}
                     disabled={!input.trim() || isTyping}
-                    className="shrink-0 w-10 h-10 rounded-full gradient-bg flex items-center justify-center
+                    className="shrink-0 w-10 h-10 lg:w-11 lg:h-11 rounded-full gradient-bg flex items-center justify-center
                       hover:opacity-90 hover:-translate-y-0.5 active:translate-y-0
                       disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:translate-y-0
                       transition-all duration-200"
