@@ -7,7 +7,7 @@ const ease = [0, 0, 0.2, 1] as const
 
 export default function HeroContent() {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center pt-16 pb-8 overflow-hidden">
+    <section className="relative min-h-[100svh] flex flex-col items-center justify-center pt-20 pb-8 overflow-hidden">
       {/* Gradient orbs — larger, more presence */}
       <div
         className="absolute pointer-events-none"
@@ -41,7 +41,7 @@ export default function HeroContent() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease }}
-          className="font-mono text-[11px] text-fg-subtle tracking-[0.2em] uppercase mb-10"
+          className="font-mono text-[10px] md:text-[11px] text-fg-subtle tracking-[0.2em] uppercase mb-6 md:mb-10"
         >
           GIS Systems Architect · Zimbabwe & Beyond
         </motion.p>
@@ -54,13 +54,13 @@ export default function HeroContent() {
         >
           <h1
             className="font-display font-bold gradient-text leading-[0.88] tracking-[-0.04em] select-none"
-            style={{ fontSize: "clamp(64px, 13vw, 160px)" }}
+            style={{ fontSize: "clamp(40px, 13vw, 160px)" }}
           >
             SPATIAL
           </h1>
           <p
             className="font-display font-bold text-fg leading-[0.88] tracking-[-0.04em] select-none -mt-1"
-            style={{ fontSize: "clamp(64px, 13vw, 160px)" }}
+            style={{ fontSize: "clamp(40px, 13vw, 160px)" }}
           >
             INTELLIGENCE
           </p>
@@ -122,7 +122,7 @@ export default function HeroContent() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.7, ease }}
-          className="mt-20 flex flex-col items-center gap-3"
+          className="mt-12 md:mt-20 flex flex-col items-center gap-3"
         >
           <span className="font-mono text-[10px] text-fg-subtle/60 tracking-[0.15em]">
             19.45°S · 29.82°E
