@@ -3,6 +3,7 @@ import { Space_Grotesk, Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/goog
 import "./globals.css"
 import Nav from "@/components/Nav"
 import Footer from "@/components/Footer"
+import NavigationLoader from "@/components/NavigationLoader"
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -57,6 +58,7 @@ export default function RootLayout({
       <body
         className={`${spaceGrotesk.variable} ${plusJakarta.variable} ${jetbrainsMono.variable} antialiased`}
       >
+        <NavigationLoader />
         <Nav />
         <main>{children}</main>
         <Footer />

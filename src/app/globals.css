@@ -105,3 +105,10 @@ h1, h2, h3, h4, h5, h6 {
 .leaflet-container {
   background: #07080F !important;
 }
+
+/* ─── Navigation loader ────────────────────────────── */
+
+@keyframes navProgress {
+  0% { width: 0%; }
+  100% { width: 90%; }
+}
