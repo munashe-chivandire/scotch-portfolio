@@ -4,6 +4,7 @@ import "./globals.css"
 import Nav from "@/components/Nav"
 import Footer from "@/components/Footer"
 import NavigationLoader from "@/components/NavigationLoader"
+import AiChatBubble from "@/components/AiChatBubble"
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -62,6 +63,7 @@ export default function RootLayout({
         <Nav />
         <main>{children}</main>
         <Footer />
+        <AiChatBubble />
       </body>
     </html>
   )
