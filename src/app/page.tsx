@@ -6,50 +6,50 @@ import HeroContent from "@/components/HeroContent"
 const featuredProjects = [
   {
     number: "01",
-    title: "CBZ GIS Mortgage System",
-    client: "Commercial Bank of Zimbabwe",
-    scope: "National Banking · Live in Production",
-    live: true,
-    summary:
-      "First GIS-driven fintech system in Zimbabwe banking. End-to-end digital mortgage applications with spatial property evaluation, valuation workflows, and payment gateway integrations.",
-    url: "https://cbzmortgages.cbz.co.zw",
-    tags: [
-      { label: "GeoDjango", variant: "violet" as const },
-      { label: "PostGIS", variant: "violet" as const },
-      { label: "OpenLayers", variant: "violet" as const },
-      { label: "REST APIs", variant: "electric" as const },
-    ],
-  },
-  {
-    number: "02",
-    title: "Zimbabwe eCadastre",
-    client: "Dept. of the Surveyor General",
-    scope: "National Land Records System",
-    live: true,
-    summary:
-      "Digitized Zimbabwe's national cadastral records into a queryable spatial system. Real-time spatial querying, geodesy module, and business rules engine for land approvals.",
-    url: "http://zimcadastre.co.zw",
-    tags: [
-      { label: "GeoDjango", variant: "violet" as const },
-      { label: "PostGIS", variant: "violet" as const },
-      { label: "PostgreSQL", variant: "electric" as const },
-      { label: "Python", variant: "electric" as const },
-    ],
-  },
-  {
-    number: "03",
-    title: "Land Information System",
-    client: "Ministry of Agriculture",
-    scope: "National Government · Lead Developer",
+    title: "Geospatial Index Analysis System",
+    client: "Google Earth Engine Powered",
+    scope: "Web Platform · Real-Time Geospatial Analysis",
     live: false,
     summary:
-      "Digitized the full land allocation workflow — from ministerial approval to field officer verification. Eliminated paper-based processes across the entire ministry.",
+      "Web-based geospatial analysis platform where users draw custom boundaries and compute environmental indices (NDVI, NDWI, EVI, SAVI, Soil Moisture) in real time using Google Earth Engine's cloud processing.",
     url: null,
     tags: [
-      { label: "GeoDjango", variant: "violet" as const },
+      { label: "Google Earth Engine", variant: "violet" as const },
+      { label: "Python", variant: "electric" as const },
+      { label: "Remote Sensing", variant: "violet" as const },
+      { label: "Interactive Mapping", variant: "amber" as const },
+    ],
+  },
+  {
+    number: "04",
+    title: "Spatial Data Warehouses — ZRBF",
+    client: "Zimbabwe Resilience Building Fund",
+    scope: "10+ Rural District Councils · National Initiative",
+    live: true,
+    summary:
+      "Enterprise-grade Spatial Data Warehouses across 10+ Rural District Councils. Centralized geospatial repositories for climate resilience planning, disaster preparedness, and evidence-based development.",
+    url: null,
+    tags: [
+      { label: "PostgreSQL/PostGIS", variant: "violet" as const },
+      { label: "GeoServer", variant: "violet" as const },
+      { label: "WMS/WFS", variant: "electric" as const },
+      { label: "Web GIS", variant: "amber" as const },
+    ],
+  },
+  {
+    number: "05",
+    title: "COVID-19 Response Dashboard",
+    client: "Ministry of Health — Zimbabwe",
+    scope: "National · Public Health Emergency Response",
+    live: false,
+    summary:
+      "Real-time spatially enabled COVID-19 response dashboard with live case mapping, hotspot detection, hospital capacity monitoring, and geospatial resource allocation for vaccination planning.",
+    url: null,
+    tags: [
+      { label: "Django", variant: "electric" as const },
+      { label: "GeoServer", variant: "violet" as const },
       { label: "OpenLayers", variant: "violet" as const },
-      { label: "React", variant: "amber" as const },
-      { label: "PostGIS", variant: "violet" as const },
+      { label: "Epidemiology", variant: "amber" as const },
     ],
   },
 ]
@@ -79,8 +79,8 @@ const services = [
 
 const stats = [
   { value: "5+", label: "Years Experience" },
-  { value: "6", label: "National Systems" },
-  { value: "SADC", label: "Regional Reach" },
+  { value: "7", label: "Projects Built" },
+  { value: "10+", label: "Districts Reached" },
   { value: "Live", label: "In Production" },
 ]
 
@@ -212,7 +212,7 @@ export default function Home() {
                 href="/work"
                 className="hidden md:flex items-center gap-2 text-sm font-medium text-fg-muted hover:text-fg transition-colors shrink-0 pb-1"
               >
-                All 6 projects <span className="text-violet">→</span>
+                All 7 projects <span className="text-violet">→</span>
               </Link>
             </div>
           </ScrollReveal>
@@ -352,7 +352,7 @@ export default function Home() {
               href="/work"
               className="text-sm font-medium text-fg-muted hover:text-fg transition-colors"
             >
-              All 6 projects <span className="text-violet ml-1">→</span>
+              All 7 projects <span className="text-violet ml-1">→</span>
             </Link>
           </ScrollReveal>
         </div>

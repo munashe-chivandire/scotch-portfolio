@@ -5,9 +5,9 @@ import { motion } from "motion/react"
 const ease = [0, 0, 0.2, 1] as const
 
 const stats = [
-  { value: "6", label: "Systems Built" },
+  { value: "7", label: "Projects Built" },
   { value: "5+", label: "Years" },
-  { value: "8", label: "Countries" },
+  { value: "10+", label: "Districts Reached" },
   { value: "Live", label: "In Production" },
 ]
 
@@ -48,7 +48,7 @@ export default function WorkHero() {
           transition={{ duration: 0.6, ease }}
           className="font-mono text-[11px] text-fg-subtle tracking-[0.2em] uppercase mb-8"
         >
-          Portfolio · 6 Systems
+          Portfolio · 7 Projects
         </motion.p>
 
         {/* Display heading — gradient treatment matching landing hero */}
